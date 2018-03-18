@@ -1,8 +1,48 @@
+//descripta a palavra
+function Decrypt(json, matriz){
+    let word = [];
+    let cont = 0;
+    let tamanho = json.length;
+    while(cont < tamanho){
+        if(json[cont].line === json[cont + 1].line){
+            if(json[cont].column === 0){
+                json[cont].column = 5;
+            }
+            if(json[cont + 1].column === 0){
+                json[cont + 1].column = 5;
+            }
+            let calcColum = (json[cont].column - 1) % 5;
+            word.push(matriz[(json[cont].line)][calcColum]);
+            calcColum = (json[cont + 1].column - 1) % 5;
+            word.push(matriz[json[cont].line][calcColum]);
+        }
+        if(json[cont].column === json[cont + 1].column){
+            if(json[cont].line === 0){
+                json[cont].line = 5;
+            }
+            if(json[cont + 1].line === 0){
+                json[cont + 1].line = 5;
+            }
+            let calcLine = (json[cont].line - 1) % 5;
+            word.push(matriz[calcLine][json[cont].column]);
+            calcLine = (json[cont + 1].line - 1) % 5;
+            word.push(matriz[calcLine][json[cont].column]);
+        }
+        if(json[cont].column !== json[cont + 1].column && json[cont].line !== json[cont + 1].line){
+
+            word.push(matriz[json[cont].line][json[cont + 1].column]);
+            word.push(matriz[json[cont + 1].line][json[cont].column]);
+        }        
+        cont += 2;
+    }
+    return word;
+}
+
 //dada uma cordenada retorna uma palavra da matriz
 function getElementMatriz(cord,matriz){
     return matriz[cord.line][cord.column];   
 }
-//pega a frase complet
+//pega a frase completa
 function getAllFrase(cords,matriz){
     var frase = [];
     cords.forEach((cord)=>{
@@ -114,7 +154,7 @@ function getPosition(word,matriz){
         }
     }
 }
-//pega as cordenadas dos pá de palavra
+//pega as cordenadas dos par de palavra
 function cord(words,matriz){
     var arrayDot = [];
     for(var i = 0 ; i< 2; i++){
@@ -201,17 +241,14 @@ function GetMatrixFull(key){
     }
     return matriz;
 }
-var key = "mel";
+var key = "Digite aqui sua chave!!!";
+var phrase = "Digite aqui sua Frase!!";
 var noDuplicate = DropRepeatWord(StringToArray(key))
 var matriz = GetMatrixFull(noDuplicate)
-console.log(matriz);
-var t = getEncripWord(StringToArray('html'));
-console.log(t);
+var t = getEncripWord(StringToArray(phrase));
 var lines_column = getWordMatriz(t,matriz);
 var des = rules(lines_column);
-console.log(des);
-getAllFrase(des,matriz);
-console.log('----------------------')
+let frase = getAllFrase(des,matriz);
 
 
 
