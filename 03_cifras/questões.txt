@@ -1,0 +1,28 @@
+1.) O que são chaves simétricas e assimétricas?
+	Assimétricas: são chaves em pares, públicas e privadas
+	Simétricas: São chaves iguais para toda comunicação entre duas máquinas
+2.) Quais as diferenças?
+	Simétrica tem apenas uma chave tanto para encriptar quanto para desencriptar
+	Assimeétrica tem duas chaves, uma para encriptar e outra desencriptar.
+3.) Dê exemplos reais de algoritmos que usem essa chave.
+	Assimétrica
+	RSA (Rivest, Shamir and Adleman): criado em 1977 nos laboratórios do Massachusetts Institute of Technology (MIT), é um dos algoritmos de chave assimétrica mais usados. Nele, números primos são utilizados da seguinte forma: dois números primos são multiplicados para se obter um terceiro valor. A chave privada são os números multiplicados e a chave pública é o valor obtido.
+
+	ElGamal: criado por Taher ElGamal, esse algoritmo usa um problema matemático conhecido por "logaritmo discreto" para se tornar seguro. É freqüente em assinaturas digitais.
+
+	Simétricas
+	DES (Data Encryption Standard): criado pela IBM em 1977, o DES usa chaves de 56 bits, permitindo até 72 quatrilhões de combinações. Apesar disso, foi ‘quebrado’ ou desvendado utilizando-se as chamadas técnicas de "força bruta" (tentativa e erro) em um desafio promovido na internet.
+
+	IDEA (International Data Encryption Algorithm): criado em 1991 por James Massey e Xuejia Lai, o IDEA é um algoritmo que usa chaves de 128 bits e tem estrutura semelhante ao DES.
+
+	RC (Ron's Code ou Rivest Cipher): criado por Ron Rivest na empresa RSA Data Security, esse algoritmo é muito utilizado em e-mails e usa chaves de 8 a 1;024 bits. Há várias versões: RC2, RC4, RC5 e RC6. Cada uma delas difere da outra por trabalhar com chaves de maior complexidade.
+4.) Dê um exemplo de onde elas são usadas em conjuntos.
+
+5.) O que é um KDC? Dê um exemplo real.
+	O KDC ( Centro Distribuidor de Chaves ) trata-se de um servidor centralizado também responsável pela autenticação dos usuários. O KDC autentica o usuário, também chamado principal, através de um ticket, que será utilizado para provar a identidade do usuário para os serviços disponíveis na rede.
+6.) Como funciona o GPG?
+	ele usa o método de chaves públicas e privada(secreta) para assegurar a transfêrencia de informação em pares
+7.) O que é ICP?
+	 Infraestrutura de Chaves Públicas: 
+8.) Por que dá o erro de certificado em alguns site incluse no da CAIXA.
+	Porque alguns sites exigem que você instalem os certificados em sua maquina ou eles não estão cadastrados na entidade orgazadora que dão certificação.

@@ -1,0 +1,1 @@
+Foi Realizado todas as questões da Atividade.A atividade foi realizada por mim, Eudálio e o Patrick Silva. eu Responde a 1 e a 2 questão. a divisão foi basicamente , foi pesquisava o primeiro que achava a resposta de qualquer questão respondia.Eu comecei a entender melhor os conceito proporto na aula. Durou basicamente 2h para terminar a atividade.
