@@ -1,0 +1,1 @@
+Foi feito toda a leitura da apostila que o professor recomendou. Fiz a leitura sozinho. sei basicamento um pouco de tudo da apostila , uma vez que foi meio que revisão pois já tinha visto esses conceito em outra disciplina.Tempo gasto foi de 4 horas dividido em dois dias.
