@@ -1,6 +1,6 @@
-######Repositório para a elaboração de um laboratório sobre Remote File Inclusion para disciplina de Segurança da Informação.
+<h1>Repositório para a elaboração de um laboratório sobre Remote File Inclusion para disciplina de Segurança da Informação.</h1>
 ---
-##LFI - Local File Inclusion / Inclusão de arquivo local
+<h2>LFI - Local File Inclusion / Inclusão de arquivo local</h2>
 
 Este tipo de ataque acontece quando a inclusão de ficheiros externos à aplicação principal (libraries, por exemplo) é feita sem validação. Normalmente são utilizados os comandos include() e require().
 
@@ -12,7 +12,7 @@ Imagine você tendo em mãos arquivos como log de acessos do servidor, ou até m
 Um servidor linux de hospedagem que possui dezenas de sites nele.
 Você consegue colocar as mãos no usuario e senha ROOT daquele servidor, loga pelo putty e tem tudo nas suas mãos.
 
-##Explicação de como o Local File Inclusion ocorrem
+<h2>Explicação de como o Local File Inclusion ocorrem</h2>
 ---
 Explicado o que é LFI, vamos ver como seria uma pagina vulneravel a LFI.
 ```PHP
@@ -75,11 +75,6 @@ Explicando o que aconteceu dessa vez:
  6. teste.php Arquivo que queremos acessar =)
 
 
-É possivel brincadeiras com isso como:
-Queremos acessar um arquivo que está no (diretório principal)/teste2/teste2.php
-E a falha está em (diretório principal)/teste/teste/index.php
-Faremos então:
-"www".vitima.com.br/teste/teste/index.php?pagina=../../teste2/teste2.php
 #Links
 ---
 - [Tutorial LFI](http://forum.guiadohacker.com.br/showthread.php?t=14052)
