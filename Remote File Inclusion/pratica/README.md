@@ -61,7 +61,7 @@ Você pode ver, estamos dentro do diretório de imagens.
 Clique no **terminal** de guia de barra de menus de **b374k** que irá fornecer terminal de vítimas para executar os comandos desejados.
 
 ## Prática
-- Mostre que você consegui realiar esse tutorial, refaça-o tirando print de cada parte.
+- Mostre que você consegui realizar esse tutorial, refaça-o tirando print de cada parte.
 - Execute 3 comandos no WebShell e tire print de cada um. 
 
 
